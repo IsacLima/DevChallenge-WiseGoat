@@ -48,6 +48,31 @@ main{
 	}
 }
 
+.shadow{
+	background-color: rgba(39, 36, 36, 0.678);
+	width: 15%;
+	height: 5%;
+	border-radius: 50%;
+	position: absolute;
+	display: flex;
+	align-self: end; 
+	margin-right: 3.5%;
+	margin-bottom: 1.5%;
+	animation: sombra 1.25s infinite;
+}
+
+@keyframes sombra{
+	50%{
+		width: 9%;
+		height: 2.5%;
+	}
+
+	100%{
+		width: 15%;
+		height: 5%;
+	}
+}
+
 .conteudo{
 	grid-area: conteudo;
 	display: flex;
