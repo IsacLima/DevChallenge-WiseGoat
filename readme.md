@@ -1,13 +1,3 @@
-
-     Site gerador de conselhos e imagens de bodes :)
-       <br />
-    <br />
-    <a href="https://github.com/devchallenge-io/wisegoat">Desafio</a>
-    ·
-    <a href="https://www.devchallenge.com.br/">DevChallenge</a>
-  </p>
-</p>
-
 # Desafio
 O desafio é consumir os dados de duas API's e criar um site gerador de conselhos e de imagens de bodes! O modelo final está disponível na pasta "design"
 
