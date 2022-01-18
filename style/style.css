@@ -51,7 +51,9 @@
 			margin-bottom: 0%;
 		}
 	}
-
+	
+	//minha ideia inicial era criar a sombra baseada na foto
+	//como nao da, fiz uma div embaixo fazendo esse efeito
 	.shadow{
 		background-color: rgba(39, 36, 36, 0.678);
 		width: 15%;
