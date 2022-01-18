@@ -32,11 +32,13 @@
 	.foto-bode{
 		width: 100%;
 		height: auto;
+		//aqui defino a animação (nome, tempo, e como vai ser o ciclo)
 		animation: bodin 1.25s infinite;
 	}
 
 
 	@keyframes bodin{
+		//aqui defino o que vai acontecer a cada porcentagem
 		0%{
 			margin-bottom: 0%;
 		}
