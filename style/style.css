@@ -7,6 +7,109 @@
 	font-weight: bold;
 }
 
+main{
+	display: grid;
+	grid-template-areas: 'conteudo'
+				 'bode';
+	grid-auto-rows: 1fr;
+	height: 100vh;
+	justify-content: space-around;
+}
+
+.bode{
+	grid-area: bode;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-bottom: 5%;
+}
+
+.foto{
+	width: 50%;
+}
+
+.foto-bode{
+	width: 100%;
+	height: auto;
+	/*aqui defino a animação (nome, tempo, e como vai ser o ciclo)*/
+	animation: bodin 1.25s infinite;
+}
+
+@keyframes bodin{
+		/*aqui defino o que vai acontecer a cada porcentagem*/
+	0%{
+		padding-bottom: 0%;
+	}
+
+	50%{
+		padding-bottom: 12.5%;
+	}
+
+	100%{
+		padding-bottom: 0%;
+	}
+}
+	
+	/*minha ideia inicial era criar a sombra baseada na foto
+	como nao da, fiz uma div embaixo fazendo esse efeito*/
+.shadow{
+	background-color: rgba(39, 36, 36, 0.678);
+	width: 35%;
+	height: 2.5%;
+	margin-right: 6%;
+	border-radius: 50%;
+	position: absolute;
+	display: flex;
+	align-self: flex-end; 
+	animation: sombra 1.25s infinite; 
+}
+
+@keyframes sombra{
+	50%{
+		width: 15%;
+	}
+
+	100%{
+		width: 35%;
+	}
+}
+
+.conteudo{
+	grid-area: conteudo;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.conteudo h3{
+	color: #BAA193;
+	font-size: 6vh;
+	text-align: start;
+}
+
+.conteudo h1{
+	color: #72005F;
+	font-size: 14vh;
+	text-align: center;
+}
+
+button{
+	width: 100%;
+	height: 100%;
+	background: #72005F;
+	color: white;
+	border-radius: 27.5px;
+	border-style: none;
+	font-size: 3vh;
+	text-align: center;
+}
+
+.conteudo a{
+	width: 62.5%;
+	height: 20%;
+}
 
 @media (min-width: 1200px){
 	main{
@@ -32,13 +135,13 @@
 	.foto-bode{
 		width: 100%;
 		height: auto;
-		//aqui defino a animação (nome, tempo, e como vai ser o ciclo)
+		/*aqui defino a animação (nome, tempo, e como vai ser o ciclo)*/
 		animation: bodin 1.25s infinite;
 	}
 
 
 	@keyframes bodin{
-		//aqui defino o que vai acontecer a cada porcentagem
+		/*aqui defino o que vai acontecer a cada porcentagem*/
 		0%{
 			margin-bottom: 0%;
 		}
@@ -52,8 +155,8 @@
 		}
 	}
 	
-	//minha ideia inicial era criar a sombra baseada na foto
-	//como nao da, fiz uma div embaixo fazendo esse efeito
+	/*minha ideia inicial era criar a sombra baseada na foto
+	como nao da, fiz uma div embaixo fazendo esse efeito*/
 	.shadow{
 		background-color: rgba(39, 36, 36, 0.678);
 		width: 15%;
