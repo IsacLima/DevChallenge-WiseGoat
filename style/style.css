@@ -10,7 +10,7 @@
 main{
 	display: grid;
 	grid-template-areas: 'conteudo'
-				 'bode';
+											 'bode';
 	grid-auto-rows: 1fr;
 	height: 100vh;
 	justify-content: space-around;
@@ -109,6 +109,75 @@ button{
 .conteudo a{
 	width: 62.5%;
 	height: 20%;
+}
+
+header{
+	height: 180px;
+	padding-left: 4%;
+	padding-top: 1.5%;
+}
+
+header a{
+	text-decoration: none;
+}
+
+header h1{
+	color: #72005F;
+	font-size: 10vh;
+	height: 10vh;
+}
+
+header h3{
+	color: #BAA193;
+	font-size: 4vh;
+	height: 4vh;
+}
+
+.main-conselho{
+	display: flex;
+	justify-content: center;
+}
+
+.conselho{
+	width: 65%;
+	height: 65%;
+	background-color: #ebe4e0;
+	display: grid;
+	grid-template-areas: 'conteudo-conselho'
+											 'foto-conselho';
+	grid-auto-rows: 1fr;
+	border-radius: 20px 0 20px 0;
+}
+
+.conteudo-conselho{
+	grid-area: conteudo-conselho;
+	font-size: 1.5vh;
+	color: #72005F;
+	flex-direction: column;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.conselho h1{
+	width: 90%;
+	height: 80%;
+	overflow-y: auto;
+}
+
+.conteudo-conselho h3{
+	color: #BAA193;
+	padding-left: 35%;
+}
+
+.foto-conselho{
+	grid-area: foto-conselho;
+	border-radius: 20px 0 20px 20px;
+}
+
+.broder{
+	width: 100%;
+	height: auto;
 }
 
 @media (min-width: 1200px){
