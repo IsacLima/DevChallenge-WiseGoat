@@ -180,6 +180,22 @@ header h3{
 	height: auto;
 }
 
+@media (orientation: landscape){
+	.conselho{
+		display: grid;
+		grid-template-areas: 'conteudo-conselho foto-conselho';
+		grid-template-columns: 1fr 1fr;
+	}
+
+	header{
+		height: 18vh;
+	}
+
+	.conteudo-conselho{
+		font-size: 3.5vh;
+	}
+}
+
 @media (min-width: 1200px){
 	main{
 		display: grid;
@@ -290,6 +306,7 @@ header h3{
 			height: 14%;
 			margin-top: 5.5%;
 	}
+
 	button:hover{
 		color:#72005F;
 		background: white;
