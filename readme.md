@@ -1,6 +1,10 @@
 # WiseGoat
 ## o acesso ao site está na descrição ou pode [clicar aqui](https://isaclima.github.io/DevChallenge-WiseGoat/)
 
+#Sobre
+
+ O site consiste em você pedir e o sábio bode lhe dar um conselho aleatório.
+
 
 # Techs: 
 - HTML
