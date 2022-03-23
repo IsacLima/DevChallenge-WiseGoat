@@ -5,7 +5,6 @@
 # Techs: 
 - HTML
 - CSS
-- Livre escolha :)
 
 ## Cores:
 Roxo: #72005F<br>
